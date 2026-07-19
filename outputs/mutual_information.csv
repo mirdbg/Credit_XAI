@@ -1,0 +1,17 @@
+feature,mutual_information
+TotalPastDueEvents,0.04766264800001996
+RevolvingUtilizationOfUnsecuredLines,0.037185108185888494
+NumberOfTimes90DaysLate,0.03019187923042521
+NumberOfTime30-59DaysPastDueNotWorse,0.025698637664067103
+NumberOfTime60-89DaysPastDueNotWorse,0.02028681888334316
+age,0.008529944066644646
+CreditLinesPerRealEstateLoan,0.005854015889933395
+NumberOfOpenCreditLinesAndLoans,0.005336529299038162
+NumberRealEstateLoansOrLines,0.004464609439978728
+DebtRatio,0.004387146517349283
+MonthlyIncome,0.0027808303865790585
+DelinquencyFields_was_missing,0.0024524792834388354
+NumberOfDependents,0.0024410069815961055
+MonthlyIncome_was_missing,0.002041427441518362
+age_was_missing,0.0
+NumberOfDependents_was_missing,0.0
