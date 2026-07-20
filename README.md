@@ -1,11 +1,14 @@
 # XAI Credit Project - Notebooks 1 to 4
 
+> Un proyecto de Andrea Labá y Miriam Del Blanco
+
 Ejecutar en orden:
 
 1. `01_EDA_Preprocesado.ipynb`
 2. `02_Modelado_RL_NN.ipynb`
-3. `03_XAI_Auditoria.ipynb`
-4. `04_Generacion_Predicciones.ipynb`
+3. `02B_MLP_Heterogeneo_Keras.ipynb`
+4. `03_XAI_Auditoria.ipynb`
+5. `04_Generacion_Predicciones.ipynb`
 
 Los datos originales están en la carpeta `data/`.
 
