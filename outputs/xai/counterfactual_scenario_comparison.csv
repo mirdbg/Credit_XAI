@@ -1,0 +1,9 @@
+index,case_type,true_class,original_score,pred_cost_1_1,n_changes_cost_1_1,found_cost_1_1,pred_cost_1_10,n_changes_cost_1_10,found_cost_1_10
+12013,clase_0_score_alto (posible falso positivo),0,0.9908015131950378,1,2,True,1,3,True
+496,clase_0_score_alto (posible falso positivo),0,0.988778293132782,1,1,True,1,2,True
+53957,clase_1_score_alto (acierto claro),1,0.9962460398674011,1,2,True,1,4,True
+92755,clase_1_score_alto (acierto claro),1,0.9936441779136658,1,2,True,1,3,True
+26131,clase_1_score_bajo (falso negativo),1,0.032217249274253845,0,3,True,0,1,True
+12029,clase_1_score_bajo (falso negativo),1,0.03546864911913872,0,3,True,0,1,True
+49607,caso_limite (cerca del threshold),0,0.5296798348426819,0,2,True,0,1,True
+71278,caso_limite (cerca del threshold),0,0.5297212600708008,0,2,True,1,1,True

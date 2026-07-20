@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "selection_source": "02B_MLP_Heterogeneo_Keras.ipynb",
+  "selection_set": "validation_20_percent",
+  "selection_metric": "pr_auc",
+  "selection_rule": "max validation PR-AUC; ties keep baseline",
+  "random_state": 42,
+  "validation_scores": {
+    "baseline_keras": 0.37588281250883,
+    "heterogeneous_mlp": 0.3980583669131988
+  },
+  "selected_model": {
+    "name": "heterogeneous_mlp",
+    "model_family": "KerasMLP",
+    "model_file": "heterogeneous_mlp_final.keras"
+  },
+  "candidate_models": {
+    "baseline_keras": "baseline_keras_final.keras",
+    "heterogeneous_mlp": "heterogeneous_mlp_final.keras"
+  },
+  "thresholds": {
+    "cost_1_1": 0.9108080808080807,
+    "cost_1_10": 0.5296969696969697
+  },
+  "scenarios": {
+    "cost_1_1": {
+      "fp_cost": 1,
+      "fn_cost": 1,
+      "output_file": "cs_produccion1.csv"
+    },
+    "cost_1_10": {
+      "fp_cost": 1,
+      "fn_cost": 10,
+      "output_file": "cs_produccion2.csv"
+    }
+  },
+  "preprocessing_spec": {
+    "version": 1,
+    "features": [
+      "RevolvingUtilizationOfUnsecuredLines",
+      "age",
+      "NumberOfTime30-59DaysPastDueNotWorse",
+      "DebtRatio",
+      "MonthlyIncome",
+      "NumberOfOpenCreditLinesAndLoans",
+      "NumberOfTimes90DaysLate",
+      "NumberRealEstateLoansOrLines",
+      "NumberOfTime60-89DaysPastDueNotWorse",
+      "NumberOfDependents",
+      "age_was_missing",
+      "MonthlyIncome_was_missing",
+      "NumberOfDependents_was_missing",
+      "DelinquencyFields_was_missing",
+      "TotalPastDueEvents",
+      "CreditLinesPerRealEstateLoan"
+    ],
+    "vector_branches": {
+      "continuous_input": [
+        "RevolvingUtilizationOfUnsecuredLines",
+        "DebtRatio",
+        "MonthlyIncome",
+        "CreditLinesPerRealEstateLoan"
+      ],
+      "integer_input": [
+        "age"
+      ],
+      "binary_input": [
+        "age_was_missing",
+        "MonthlyIncome_was_missing",
+        "NumberOfDependents_was_missing",
+        "DelinquencyFields_was_missing"
+      ],
+      "count_numeric_input": [
+        "NumberOfTime30-59DaysPastDueNotWorse",
+        "NumberOfTime60-89DaysPastDueNotWorse",
+        "NumberOfTimes90DaysLate",
+        "NumberOfOpenCreditLinesAndLoans",
+        "NumberRealEstateLoansOrLines",
+        "NumberOfDependents",
+        "TotalPastDueEvents"
+      ]
+    },
+    "embedding_features": {
+      "NumberOfTime30-59DaysPastDueNotWorse": {
+        "max_token": 12,
+        "input_dim": 14,
+        "embedding_dim": 4
+      },
+      "NumberOfTime60-89DaysPastDueNotWorse": {
+        "max_token": 8,
+        "input_dim": 10,
+        "embedding_dim": 4
+      },
+      "NumberOfTimes90DaysLate": {
+        "max_token": 15,
+        "input_dim": 17,
+        "embedding_dim": 4
+      },
+      "NumberOfOpenCreditLinesAndLoans": {
+        "max_token": 58,
+        "input_dim": 60,
+        "embedding_dim": 4
+      },
+      "NumberRealEstateLoansOrLines": {
+        "max_token": 54,
+        "input_dim": 56,
+        "embedding_dim": 4
+      },
+      "NumberOfDependents": {
+        "max_token": 13,
+        "input_dim": 15,
+        "embedding_dim": 4
+      },
+      "TotalPastDueEvents": {
+        "max_token": 19,
+        "input_dim": 21,
+        "embedding_dim": 4
+      }
+    },
+    "shared_embedding_group": [
+      "NumberOfTime30-59DaysPastDueNotWorse",
+      "NumberOfTime60-89DaysPastDueNotWorse",
+      "NumberOfTimes90DaysLate"
+    ],
+    "excluded_features": [
+      "RevolvingUtilizationOfUnsecuredLines_log1p",
+      "DebtRatio_log1p",
+      "MonthlyIncome_log1p",
+      "NumberOfOpenCreditLinesAndLoans_log1p",
+      "NumberRealEstateLoansOrLines_log1p",
+      "TotalPastDueEvents_log1p",
+      "Has90DaysLate",
+      "HasAnyPastDue",
+      "HasDependents"
+    ],
+    "split": {
+      "method": "train_test_split_stratified",
+      "test_size": 0.2,
+      "random_state": 42
+    }
+  },
+  "preprocessing_hash": "6239f258156cd52117b7e92f2fa14a8d940505238dda28f10ca62206aeffad3a"
+}

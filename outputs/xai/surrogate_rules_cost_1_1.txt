@@ -1,0 +1,19 @@
+|--- TotalPastDueEvents <= 4.500
+|   |--- NumberOfTimes90DaysLate <= 1.500
+|   |   |--- TotalPastDueEvents <= 3.500
+|   |   |   |--- class: 0
+|   |   |--- TotalPastDueEvents >  3.500
+|   |   |   |--- class: 0
+|   |--- NumberOfTimes90DaysLate >  1.500
+|   |   |--- RevolvingUtilizationOfUnsecuredLines <= 0.940
+|   |   |   |--- class: 0
+|   |   |--- RevolvingUtilizationOfUnsecuredLines >  0.940
+|   |   |   |--- class: 0
+|--- TotalPastDueEvents >  4.500
+|   |--- NumberOfTimes90DaysLate <= 0.500
+|   |   |--- class: 0
+|   |--- NumberOfTimes90DaysLate >  0.500
+|   |   |--- RevolvingUtilizationOfUnsecuredLines <= 0.784
+|   |   |   |--- class: 1
+|   |   |--- RevolvingUtilizationOfUnsecuredLines >  0.784
+|   |   |   |--- class: 1

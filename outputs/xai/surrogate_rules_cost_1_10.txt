@@ -1,0 +1,22 @@
+|--- TotalPastDueEvents <= 0.500
+|   |--- RevolvingUtilizationOfUnsecuredLines <= 0.681
+|   |   |--- NumberRealEstateLoansOrLines <= 3.500
+|   |   |   |--- class: 0
+|   |   |--- NumberRealEstateLoansOrLines >  3.500
+|   |   |   |--- class: 0
+|   |--- RevolvingUtilizationOfUnsecuredLines >  0.681
+|   |   |--- age <= 42.500
+|   |   |   |--- class: 1
+|   |   |--- age >  42.500
+|   |   |   |--- class: 0
+|--- TotalPastDueEvents >  0.500
+|   |--- RevolvingUtilizationOfUnsecuredLines <= 0.416
+|   |   |--- TotalPastDueEvents <= 1.500
+|   |   |   |--- class: 0
+|   |   |--- TotalPastDueEvents >  1.500
+|   |   |   |--- class: 1
+|   |--- RevolvingUtilizationOfUnsecuredLines >  0.416
+|   |   |--- RevolvingUtilizationOfUnsecuredLines <= 0.639
+|   |   |   |--- class: 1
+|   |   |--- RevolvingUtilizationOfUnsecuredLines >  0.639
+|   |   |   |--- class: 1
