@@ -13,3 +13,5 @@ Los ficheros finales se generan en `outputs/predictions/`:
 
 - `cs_produccion1.csv` para FP=1, FN=1.
 - `cs_produccion2.csv` para FP=1, FN=10.
+
+Dejamos una copia fuera para su mejor acceso.
